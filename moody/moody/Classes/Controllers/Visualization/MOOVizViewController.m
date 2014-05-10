@@ -29,7 +29,7 @@
     [super loadView];
     MKMapView *mapView = [MKMapView new];
     mapView.mapType = MKMapTypeHybrid;
-    mapView.showsUserLocation = YES;
+    mapView.showsUserLocation = NO;
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(mapView.userLocation.location.coordinate, 1000, 1000);
     [mapView setRegion:region];
     mapView.delegate = self;
