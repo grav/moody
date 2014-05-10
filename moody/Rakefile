@@ -1,0 +1,17 @@
+require 'rubygems'
+require 'betabuilder'
+
+BetaBuilder::Tasks.new do |config|
+  # your Xcode target name
+  # EDIT HERE:
+  config.target = "moody"
+
+  # the Xcode configuration profile
+  # EDIT HERE (if not ok):
+  config.configuration = "inhouse" 
+  config.workspace_path = "moody.xcworkspace"
+  config.scheme         = config.target
+  config.app_name       = config.target
+
+  config.build_dir = "build/Products"
+end

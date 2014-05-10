@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5A9B1BF4-1FAE-4880-AA28-8039224AE352</string>
+	<key>IDESourceControlProjectName</key>
+	<string>moody</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>25A76051-EA3E-493B-9D4A-8DE69F730EA1</key>
+		<string>https://github.com/grav/moody-client</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>moody/moody.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>25A76051-EA3E-493B-9D4A-8DE69F730EA1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/grav/moody-client</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>25A76051-EA3E-493B-9D4A-8DE69F730EA1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>25A76051-EA3E-493B-9D4A-8DE69F730EA1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>moody-client</string>
+		</dict>
+	</array>
+</dict>
+</plist>

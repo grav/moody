@@ -76,6 +76,7 @@
 
     [[[RACObserve(moodsOverlay, moods) ignore:nil] deliverOn:[RACScheduler mainThreadScheduler]] subscribeNext:^(id x) {
         @strongify(mapView)
+        NSLog(@"x = %@", x);
         [mapView setVisibleMapRect:[moodsOverlay boundingMapRect]];
     }];
 }
