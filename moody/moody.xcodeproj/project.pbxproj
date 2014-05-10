@@ -329,6 +329,7 @@
 				308A6CC60437A395CA6A3483 /* Resources */,
 				07B3A519641C4D9F975EB0AE /* Copy Pods Resources */,
 				6D951668191D307B00D027E5 /* Run Script */,
+				6D5B590B191E85500011C5FE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -438,6 +439,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6D5B590B191E85500011C5FE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Add unique Shipshape URL scheme\n\nAPP_PLIST_NAME=$(basename $INFOPLIST_PATH)\nFULL_APP_PLIST_PATH=$CODESIGNING_FOLDER_PATH/$APP_PLIST_NAME\nUUID=$(uuidgen)\nSCHEME=shipshape${UUID//-/}\necho 'App will respond to URL scheme '$SCHEME'://'\nPBUDDY='/usr/libexec/PlistBuddy -c'\n$PBUDDY 'Add :CFBundleURLTypes array' $FULL_APP_PLIST_PATH\n$PBUDDY 'Add :CFBundleURLTypes:0:CFBundleURLName string' $FULL_APP_PLIST_PATH\n$PBUDDY 'Add :CFBundleURLTypes:0:CFBundleURLSchemes array' $FULL_APP_PLIST_PATH\n$PBUDDY 'Add :CFBundleURLTypes:0:CFBundleURLSchemes:0 string '$SCHEME $FULL_APP_PLIST_PATH\nplutil -convert binary1 $FULL_APP_PLIST_PATH";
+		};
 		6D951668191D307B00D027E5 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -524,7 +538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "moody/moody-Prefix.pch";
 				INFOPLIST_FILE = "moody/moody-Info.plist";
@@ -645,7 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "moody/moody-Prefix.pch";
 				INFOPLIST_FILE = "moody/moody-Info.plist";
@@ -697,7 +711,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shape ApS";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "moody/moody-Prefix.pch";
 				INFOPLIST_FILE = "moody/moody-Info.plist";
