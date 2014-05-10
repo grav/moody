@@ -1,5 +1,6 @@
 // Automatic image defines from process_images.rb script by Ole Gammelgaard Poulsen
 
+#define kImgIcon [UIImage imageNamed:@"icon.png"]
 #define kImgMoodHappy [UIImage imageNamed:@"mood_happy.png"]
 #define kImgMoodMedium [UIImage imageNamed:@"mood_medium.png"]
 #define kImgMoodSad [UIImage imageNamed:@"mood_sad.png"]
