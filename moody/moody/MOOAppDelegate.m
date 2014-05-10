@@ -16,6 +16,7 @@
 #import "MOOMockDataGenerator.h"
 #import "MOOMood.h"
 #import "MOOAPIManager.h"
+#import "MOOMoodInputViewController.h"
 
 #if TARGET_IPHONE_SIMULATOR
 	#import "DCIntrospect.h"
@@ -30,7 +31,7 @@ static NSString *const kNameOfStylesheetFile = @"Stylesheets/stylesheet.cas";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    MMDrawerController *drawerController = [[MMDrawerController alloc] initWithCenterViewController:[MOOVizViewController new]
+    MMDrawerController *drawerController = [[MMDrawerController alloc] initWithCenterViewController:[MOOMoodInputViewController new]
                                                                      leftDrawerViewController:[MOOMenuViewController new]];
     drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeBezelPanningCenterView;
     drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModePanningCenterView | MMCloseDrawerGestureModeTapCenterView;
