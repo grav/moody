@@ -8,7 +8,7 @@
 #import "MOOMood.h"
 #import "NSURLConnection+MOOAdditions.h"
 
-static NSString *const kUrl = @"http://localhost:3000/moods";
+static NSString *const kUrl = @"http://nameless-ravine-2931.herokuapp.com/moods";
 
 @interface MOOAPIManager ()
 
